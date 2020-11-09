@@ -9,7 +9,7 @@ const TimerComponent = (props) => {
       <View style={{backgroundColor: '#3949ab', alignItems: 'center', padding: 20, borderRadius: 10}}>
         <CountdownCircleTimer
           isPlaying={props.counterFlag}
-          duration={1}
+          duration={5}
           onComplete={() => props.onTimerCompleted()}
           colors={[
             ['#fff176', 0.4],

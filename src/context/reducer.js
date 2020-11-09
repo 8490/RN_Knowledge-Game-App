@@ -9,7 +9,9 @@ export function reducer(state, action) {
       state.score = pointStatus ? state.score + 1 : state.score - 1;
       return {...state};
 
-    
+    case 'SET_RESET':
+      state.score = 0;
+      return {...state};
 
     default:
       return state;

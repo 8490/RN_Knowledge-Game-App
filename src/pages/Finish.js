@@ -14,7 +14,16 @@ const Finish = (props) => {
       <View style={finishPage.container}>
         <Text style={finishPage.text}>Your score is {userScore}</Text>     
 
-      </View>
+        <View style={finishPage.buttonContainer}>
+          <TouchableOpacity
+            onPress={() => {
+              props.navigation.navigate("Intro")
+              dispatch({type: 'SET_RESET'});
+            }}>
+            <Text style={finishPage.buttonText}>Game Again</Text>
+          </TouchableOpacity>
+        </View>
+    </View>
 
     </SafeAreaView>
   );

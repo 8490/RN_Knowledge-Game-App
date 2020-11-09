@@ -41,7 +41,7 @@ export const finishPage = StyleSheet.create({
     fontFamily: 'IndieFlower-Regular'
   },
   buttonContainer: {
-    backgroundColor: '#fb8c00',
+    backgroundColor: 'tomato',
     borderRadius: 10,
     padding: 10,
     paddingHorizontal: 20,
